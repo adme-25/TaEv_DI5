@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiKey: "89b0a958321f4f309affbbfb23c9830b",
+  apiKey: "2ff620f7bfef4e4799f699abb8f00562",
   apiUrl: "https://newsapi.org/v2"
 };
 
