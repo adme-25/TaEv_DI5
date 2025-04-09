@@ -25,11 +25,21 @@
 #container a {
   text-decoration: none;
 }
+
 h2 {
   font-size: 20px;
   line-height: 25px;
   text-align: center;
-  
+}
+.grafica{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px; // Espaciado entre los elementos si es necesario
+  }
+
+.head{
+  background-color: #fff;
 }
 /* Estilos generales para el PDF */
 .dashboard-content {
@@ -50,6 +60,7 @@ h2 {
 .list-container,
 .table-container {
   padding-top: 55px;
+  padding-bottom: 15px;
   background-color: #fff;
   max-width: 100%;
   min-width: 200px;

@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header class="head">
   <ion-toolbar color="primary">
     <ion-title>
       Visualización de Datos
@@ -7,34 +7,26 @@
   <ion-button (click)="generarPDF()">Generar PDF</ion-button>
 </ion-header>
 
-<!-- Mostrar u ocultar componentes según el segmento seleccionado -->
 <ion-content [fullscreen]="true">
-
   <div #container>
+    <div class="seccion header">
+      <h1>Dashboard</h1>
+    </div>
     <div class="dashboard-content">
-      <div class="seccion header">
-        <h1>Dashboard</h1>
-      </div>
-      <div class = "seccion chart">
+      <div class="seccion">
         <ion-grid *ngIf="tipoDeChartSeleccionado === 'bar-chart'">
           <ion-row>
-            <ion-col size="6">
+            <ion-col size="4">
               <h2>Bar-chart</h2>
               <app-bar-chart [borderColorCategorias]="borderColorCat" [backgroundColorCategorias]="backgroundColorCat"></app-bar-chart>
             </ion-col>
-            <ion-col size="6">
-              <ion-row>
-                <ion-col size="12">
-                  <h2>Line-chart</h2>
-                  <app-line-chart></app-line-chart>
-                </ion-col>
-              </ion-row>
-              <ion-row>
-                <ion-col size="12">
-                  <h2>Pie-chart</h2>
-                  <app-pie-chart></app-pie-chart>
-                </ion-col>
-              </ion-row>
+            <ion-col size="4">
+              <h2>Line-chart</h2>
+              <app-line-chart></app-line-chart>
+            </ion-col>
+            <ion-col size="4">
+              <h2>Pie-chart</h2>
+              <app-pie-chart></app-pie-chart>
             </ion-col>
           </ion-row>
         </ion-grid>
@@ -46,8 +38,13 @@
         </ul>
       </div>
       <div class="table-container">
-        <h2 class="seccion">Table</h2>
         <app-tablas [datosTabla]="datosTablaTab1"></app-tablas>
+      </div>
+      <div class="seccion list-container">
+        <h2>List</h2>
+        <ul *ngFor="let lista of datosLista">
+          <li>{{lista}}</li>
+        </ul>
       </div>
     </div>
   </div>

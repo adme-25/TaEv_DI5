@@ -11,75 +11,75 @@ import html2canvas from 'html2canvas';
 })
 export class HomePage {
   datosTablaTab1 = [
-    { nombre: 'Juan', apellido: 'garcia', pais: "españa", edad: 30 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'Juan', apellido: 'garcia', pais: "españa", edad: 30 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'Juan', apellido: 'garcia', pais: "españa", edad: 30 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'Juan', apellido: 'garcia', pais: "españa", edad: 30 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'Juan', apellido: 'garcia', pais: "españa", edad: 30 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'Juan', apellido: 'garcia', pais: "españa", edad: 30 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'María', apellido: 'perez', pais: "portugal", edad: 25 },
-    { nombre: 'Pedro', apellido: 'ruiz', pais: "españa", edad: 40 },
-    { nombre: 'Pedro', apellido: 'ruiz', pais: "españa", edad: 40 }
+    { nombre: '1Juan', apellido: 'garcia', pais: "españa", edad: 30 },
+    { nombre: '2María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '3María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '4María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '5María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '6María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '7María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '8María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '9María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '10María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '11María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '12María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '13Juan', apellido: 'garcia', pais: "españa", edad: 30 },
+    { nombre: '14María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '15María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '16María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '17María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '18María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '19María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '20María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '21María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '22María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '23María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '24Juan', apellido: 'garcia', pais: "españa", edad: 30 },
+    { nombre: '25María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '26María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '27María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '28María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '29María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '30María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '31María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '32María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '33María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '34María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '35Juan', apellido: 'garcia', pais: "españa", edad: 30 },
+    { nombre: '36María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '37María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '38María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '39María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '40María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '41María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '42María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '43María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '44María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '45María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '46Juan', apellido: 'garcia', pais: "españa", edad: 30 },
+    { nombre: '47María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '48María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '49María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '50María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '51María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '52María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '53María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '54María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '55María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '56María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '57Juan', apellido: 'garcia', pais: "españa", edad: 30 },
+    { nombre: '58María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '59María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '60María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '61María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '62María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '63María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '64María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '65María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '66María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '67María', apellido: 'perez', pais: "portugal", edad: 25 },
+    { nombre: '68Pedro', apellido: 'ruiz', pais: "españa", edad: 40 },
+    { nombre: '69Pedro', apellido: 'ruiz', pais: "españa", edad: 40 }
   ];
 
   datosLista = [
@@ -194,6 +194,7 @@ export class HomePage {
     const sections = this.container.nativeElement.querySelectorAll('.seccion') as NodeListOf<HTMLElement>;
     // El total de secciones que tenemos en nuestro html
     const totalSections = sections.length;
+    console.log("Secciones totales: " + totalSections);
     //Gestionará la sección que estamos analizando
     let currentSectionIndex = 0;
     //Controlará que se hayan creado todas las imagenes antes de crear el PDF. En caso contrario imprimiría un pdf por cada sección.
@@ -235,26 +236,39 @@ export class HomePage {
 
   addPageConfig(doc:jsPDF) {
     for (let i = 1; i <= doc.getNumberOfPages(); i++) {
-      // Añadimos la págin
+      // Añadimos la página
       doc.setPage(i);
+      this.encabezadoPagina(doc);
+      this.piePagina(doc, i);
+
+    }
+  }
+  piePagina(doc:jsPDF, i: any) {
+      // Añadimos la paginación
+      doc.setFillColor("#CDCDCD");
+      doc.rect(10,doc.internal.pageSize.height - 20, doc.internal.pageSize.width-20, 10, "F");
+      doc.text("Página "+i+" de " + doc.getNumberOfPages(), (doc.internal.pageSize.width/2)-30, doc.internal.pageSize.height - 10, {baseline:'bottom'});
+  }
+  encabezadoPagina(doc:jsPDF){
+      //Añadimos el rectangulo
+      doc.setFillColor("#CDCDCD");
+      doc.rect(10,5,doc.internal.pageSize.width-20, 45, "F");
       // Añadimos el logotipo, sus valores y posición
-      const imagen = "/assets/icon/favicon.png";
-      const imgWidth = 45; // Ancho de la imagen
+      const imagen = "/assets/icon/icono.png";
+      const imgWidth = 60; // Ancho de la imagen
       const imgHeight = 45; // Alto de la imagen
-      const imgX = 5; // Posición X de la imagen
+      const imgX = (doc.internal.pageSize.width /2) - 30; // Posición X de la imagen
       const imgY = 5; // Posición Y de la imagen
       doc.addImage(imagen, "JPG", imgX, imgY, imgWidth, imgHeight);
       // Le asignamos un tamaño a las letras
-      doc.setFontSize(10);
+      doc.setFontSize(12);
+      doc.setTextColor("#093700");
       doc.line(0, 55, doc.internal.pageSize.width, 55);
       // Añadimos información de la empresa
-      const nombreEmpresa = "Nombre de la Empresa";
+      const nombreEmpresa = "Diseño Ecológico";
       const telefono = "Teléfono: 123-456-789";
       const direccion = "Dirección: Calle Principal, 123";
       const texto = nombreEmpresa+'\n'+telefono+'\n'+direccion;
-      doc.text(texto, doc.internal.pageSize.width - 120, 10, {baseline:'bottom'});
-      // Añadimos la paginación
-      doc.text("Página "+i, doc.internal.pageSize.width - 100, doc.internal.pageSize.height - 10, {baseline:'bottom'});
-    }
+      doc.text(texto, doc.internal.pageSize.width - 750, 15, {baseline:'top'});
   }
 }
