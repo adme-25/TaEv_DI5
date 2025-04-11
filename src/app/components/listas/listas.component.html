@@ -1,0 +1,9 @@
+<h2 class="seccion">Lista</h2>
+
+<div *ngFor="let row of datosLista | listaPipe: 10">
+  <div [ngClass]="{'seccion': row.length <= 13}">
+    <ul>
+      <li *ngFor="let item of row">{{ item }}</li>
+    </ul>
+  </div>
+</div>

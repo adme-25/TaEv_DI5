@@ -32,12 +32,12 @@ h2 {
   text-align: center;
 }
 .grafica{
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px; // Espaciado entre los elementos si es necesario
-  }
+  font-size: small;
+}
 
+ion-row{
+  height: 650px;
+}
 .head{
   background-color: #fff;
 }
@@ -50,7 +50,7 @@ h2 {
 
 .header {
   text-align: center;  
-  padding-top: 55px;
+  padding-top: 10px;
 }
 
 .header h1 {

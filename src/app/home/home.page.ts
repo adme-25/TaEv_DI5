@@ -82,7 +82,7 @@ export class HomePage {
     { nombre: '69Pedro', apellido: 'ruiz', pais: "españa", edad: 40 }
   ];
 
-  datosLista = [
+  datosLista1 = [
     "Esta será la línea 1 de la lista, vamos a poner un texto muy largo para ver qué es lo que hace en estos casos y como podemos corregirlo",
     "Esta será la línea 2 de la lista, será más corta que la anterior, pero entrará bastante justo en el ancho A4.",
     "Esta será la línea 3 de la lista, este entra bien",
@@ -103,6 +103,8 @@ export class HomePage {
     "Esta será la línea 18 de la lista, este entra bien",
     "Esta será la línea 19 de la lista, este entra bien",
     "Esta será la línea 20 de la lista, este entra bien",
+    "Esta será la línea 21 de la lista, este entra bien",
+
   ]
 
   /* En el html, añadimos el atributo #container al div padre (será una id única), para luego poder gestionar todo lo que hay dentro de este div.
@@ -159,19 +161,6 @@ export class HomePage {
     });
   }
 
-  //Gestionamos el cambio de segmento
-  segmentChanged(event: any) {
-    //Añadimos la ruta
-    //this.router.navigate(['/tabs/graficos', event.detail.value]);
-    //Recogemos el tipo de chart (bar-chart, line-chart o pie-chart), mediante event.detail.value
-    this.tipoDeChartSeleccionado = event.detail.value;
-    //En caso de bar-chart, realizamos una llamada al api por cada categoria que tenemos.
-    if (this.tipoDeChartSeleccionado == "bar-chart"){
-      this.categorias.forEach(categoria => {
-        this.gestionServiceApi.cargarCategoria(categoria);
-      });
-    }
-  }
   generarPDF() {
     //Ancho en px de A4
     const anchoMax = 794 //794px; //210mm
@@ -204,22 +193,25 @@ export class HomePage {
     let footerHeight = 10; //Altura del padding que le hemos dado al footer
     let currentPageHeight = headerHeight+footerHeight;
 
+
     while (currentSectionIndex < totalSections) {
       const section = sections[currentSectionIndex];
+
       html2canvas(section).then(canvas => {
         const imageData = canvas.toDataURL('image/jpg');
+
         const width = doc.internal.pageSize.getWidth();
         /*Se calcula el height dependiendo del width del canvas y su relación con el width. 
          *Esto se hace para que la imagen mantenga dimensiones proporcionales según el width de la página.
          */
+        console.log("tamaño canvas: alto " + canvas.height + " ancho " + canvas.width);
+
         const height = canvas.height * (width / canvas.width);
         if (currentPageHeight + height >= doc.internal.pageSize.getHeight()) {
+
           doc.addPage();
           currentPageHeight = headerHeight+footerHeight;
-          //currentPageHeight = headerHeight + footerHeight;
-          //this.addPageConfig(doc);
         }
-        //this.addPageConfig(doc);
         doc.addImage(imageData, 'JPG', 0, currentPageHeight - footerHeight, width, height);
         currentPageHeight += height;
         contSections++;
@@ -240,7 +232,6 @@ export class HomePage {
       doc.setPage(i);
       this.encabezadoPagina(doc);
       this.piePagina(doc, i);
-
     }
   }
   piePagina(doc:jsPDF, i: any) {
